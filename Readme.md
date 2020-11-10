@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Иван Ткачук](https://up.htmlacademy.ru/adaptive/21/user/108534).
-* Наставник: `Неизвестно`.
+* Наставник: `Сергей Скубида`.
 
 ---
 
