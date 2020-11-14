@@ -75,7 +75,7 @@
             <img src="./source/img/microsoft-logo.svg" alt="microsoft-icon" class="aplications__link-icon">
           </a>
         </div>
-        <p class="heade__content-description">
+        <p class="header__content-description">
           Доступно для iPhone, iPad, Android,<br>
           Windows Phone, OS X, Windows 8
         </p>
@@ -90,49 +90,52 @@
       <!-- Profit -->
       <section class="profit">
         <div class="container">
-          <h2 class="profit__title">
+            <h2 class="visually-hidden">
+                Что мы предлогаем:
+            </h2>
+            <span class="profit__text">
             Устали от серости мегаполиса?
-            <span class="profit__title-text">
+            </span>
+            <h2 class="profit__title">
               Нам есть, что вам<br>
               предложить!
-            </span>
-          </h2>
-          <div class="profit__wrapper">
-            <div class="profit__item">
-              <!-- какая то картинка которая скрыта в мобильной версии -->
-              <h3 class="profit__item-title">
-                Поднимает настроение
-              </h3>
-              <p class="profit__item-description">
-                Приложение позволит вам победить<br>
-                осеннюю хандру и депрессию<br>
-                буквально в несколько кликов!
-              </p>
-            </div>
-            <div class="profit__item">
-              <!-- какая то картинка которая скрыта в мобильной версии -->
-              <h3 class="profit__item-title">
-                Меняет мир вокруг
-              </h3>
-              <p class="profit__item-description">
-                Сделайте снимок и украсьте его <br>
-                смайликом или текстовой подписью,<br>
-                чтобы усилить эффект
-              </p>
-            </div>
-            <div class="profit__item">
-              <!-- какая то картинка которая скрыта в мобильной версии -->
-              <h3 class="profit__item-title">
-                Заводит новых друзей
-              </h3>
-              <p class="profit__item-description">
-                Ставьте лайки, комментируйте,<br>
-                делитесь фотографиями с друзьями и<br>
-                заводите новых
-              </p>
-            </div>
-            <img src="./source/img/profit-img.png" alt="" class="profit__mobile-icon">
-          </div>
+            </h2>
+            <ul class="profit__wrapper">
+                <li class="profit__item">
+                    <!-- какая то картинка которая скрыта в мобильной версии -->
+                    <h3 class="profit__item-title">
+                        Поднимает настроение
+                    </h3>
+                    <p class="profit__item-description">
+                        Приложение позволит вам победить<br>
+                        осеннюю хандру и депрессию<br>
+                        буквально в несколько кликов!
+                    </p>
+                </li>
+                <li class="profit__item">
+                    <!-- какая то картинка которая скрыта в мобильной версии -->
+                    <h3 class="profit__item-title">
+                        Меняет мир вокруг
+                    </h3>
+                    <p class="profit__item-description">
+                        Сделайте снимок и украсьте его <br>
+                        смайликом или текстовой подписью,<br>
+                        чтобы усилить эффект
+                    </p>
+                </li>
+                <li class="profit__item">
+                    <!-- какая то картинка которая скрыта в мобильной версии -->
+                    <h3 class="profit__item-title">
+                        Заводит новых друзей
+                    </h3>
+                    <p class="profit__item-description">
+                        Ставьте лайки, комментируйте,<br>
+                        делитесь фотографиями с друзьями и<br>
+                        заводите новых
+                    </p>
+                </li>
+                <img src="./source/img/profit-img.png" alt="" class="profit__mobile-icon">
+            </ul>
         </div>
       </section>
       <!-- End Profit -->
@@ -158,20 +161,23 @@
 
       <!-- Comments -->
       <section class="comments">
+        <h2 class="visually-hidden">
+              Тут мог быть Ваш коментарий!
+        </h2>
         <div class="container">
-          <div class="comments__carousel">
-            <p class="carousel__description">
-              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на<br>
-              привычные серые вещи! А еще я познакомился со своей будущей женой в<br>
-              коментариях к выложенной фотографии!»
-            </p>
-            <h3 class="carousel__title">
-              Николай Петров
-              <!-- <span class="comments__title-span">
-              25 лет, водитель трамвая
-            </span> -->
-            </h3>
-          </div>
+            <article class="comments__slide">
+                <p class="comments__slide-description">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на<br>
+                привычные серые вещи! А еще я познакомился со своей будущей женой в<br>
+                коментариях к выложенной фотографии!»
+                </p>
+                <h3 class="comments__slide-title">
+                Николай Петров
+                <!-- <span class="comments__title-text">
+                25 лет, водитель трамвая
+                </span> -->
+                </h3>
+            </article>
         </div>
       </section>
       <!-- End Comments -->
@@ -294,7 +300,7 @@
             Свяжитесь с нами!
           </h2>
           <div class="feedback__wrapper">
-            <div class="feedbacl__phone">
+            <div class="feedback__phone">
               <span class="phone__text">
                 Звоните:
               </span>
@@ -302,7 +308,7 @@
                 +7 (812) 555-66-66
               </a>
             </div>
-            <div class="feedbacl__email">
+            <div class="feedback__email">
               <span class="email__text">
                 Пишите:
               </span>
@@ -310,7 +316,7 @@
                 mail@htmlacademy.ru
               </a>
             </div>
-            <div class="feedbacl__address">
+            <div class="feedback__address">
               <span class="address_text">
                 Приезжайте в гости:
               </span>
