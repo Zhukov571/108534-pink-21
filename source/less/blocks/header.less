@@ -1,0 +1,112 @@
+// Variables
+@basic-color: #fff;
+@block-liststyle: none;
+@block-text-decoration: none;
+// End Variables
+
+.header {
+  background-image: url(../img/header-bg-sm.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #E5E5E5;
+}
+
+// Header Navigation
+.header__top-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header__logo-link {
+  cursor: pointer;
+}
+
+.header__nav-list {
+  list-style: @block-liststyle;
+  margin-left: auto;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+}
+
+.header__nav-link {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  align-items: center;
+  text-decoration: @block-text-decoration;
+  color: @basic-color;
+  text-transform: uppercase;
+}
+// Header Navigation
+
+// Header Content
+.header__content-top {
+  background-image: url(../img/header-content-phone.png);
+  background-repeat: no-repeat;
+}
+
+.header__content-title {
+  margin-top: 0;
+  padding-top: 29px;
+  margin-bottom: 34px;
+  color: @basic-color;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.header__content-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.aplications {
+  padding-top: 29px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1D2631;
+}
+
+.aplication__button {
+  margin: 0 auto 38px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: @basic-color;
+  background-color: transparent;
+  border: 3px solid @basic-color;
+  box-sizing: border-box;
+  border-radius: 29px;
+  padding: 21px 38px;
+  cursor: pointer;
+ }
+
+ .aplication__box {
+   margin-bottom: 31px;
+ }
+
+ .aplications__link {
+   margin-right: 35px;
+ }
+
+ .aplications__link:last-child {
+   margin-right: 0;
+ }
+
+.header__content-description {
+  margin-top: 0;
+  margin-bottom: 38px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: @basic-color;
+}
+// End Header Content
+
