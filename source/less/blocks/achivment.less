@@ -1,0 +1,58 @@
+// Achivment
+.achivment {
+  margin: 0 -22px;
+  padding: 42px 22px 44px;
+  background-color: #F2F2F2;
+}
+
+.achivment__title {
+  margin-top: 0;
+  margin-bottom: 44px;
+  font-family: 'OpenSans-Regular', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #D22856;
+}
+
+.achivment__box {
+  margin: 0;
+  padding: 0;
+}
+
+.achivment__box-item {
+  margin-bottom: 47px;
+}
+
+.achivment__box-item:last-child {
+  margin-bottom: 0;
+}
+
+.achivment__box-label {
+  position: relative;
+  z-index: 0;
+  padding-left: 57px;
+  font-family: 'OpenSans-Regular', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  cursor: pointer;
+}
+
+.achivment__box-label::before {
+  position: absolute;
+  content: url('../../img/checkbox.svg');
+  z-index: 0;
+  top: -5px;
+  left: 0;
+}
+
+.achivment__box-input:checked + .achivment__box-label::before {
+  position: absolute;
+  content: url('../../img/checked-tick.svg');
+  z-index: 0;
+  top: -5px;
+  left: 0;
+}
+// End Achivment

@@ -29,8 +29,7 @@
 }
 
 .header__nav-link {
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'OpenSans-Bold', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 32px;
   align-items: center;
@@ -41,18 +40,19 @@
 // Header Navigation
 
 // Header Content
+.header__content {
+  padding-top: 29px;
+}
 .header__content-top {
   background-image: url(../img/header-content-phone.png);
   background-repeat: no-repeat;
 }
 
 .header__content-title {
-  margin-top: 0;
-  padding-top: 29px;
+  margin: 0;
   margin-bottom: 34px;
   color: @basic-color;
-  font-style: normal;
-  font-weight: 300;
+  font-family: 'OpenSans-Light' ,'Arial', sans-serif;
   font-size: 24px;
   line-height: 120%;
   text-align: center;
@@ -62,51 +62,15 @@
   display: block;
   margin: 0 auto;
 }
-
-.aplications {
-  padding-top: 29px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: #1D2631;
-}
-
-.aplication__button {
-  margin: 0 auto 38px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
-  color: @basic-color;
-  background-color: transparent;
-  border: 3px solid @basic-color;
-  box-sizing: border-box;
-  border-radius: 29px;
-  padding: 21px 38px;
-  cursor: pointer;
- }
-
- .aplication__box {
-   margin-bottom: 31px;
- }
-
- .aplications__link {
-   margin-right: 35px;
- }
-
- .aplications__link:last-child {
-   margin-right: 0;
- }
-
-.header__content-description {
-  margin-top: 0;
-  margin-bottom: 38px;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 24px;
-  text-align: center;
-  color: @basic-color;
-}
 // End Header Content
 
+
+// Header Content Form
+.header__content-form {
+  padding: 38px 0 51px;
+}
+
+.header__form-title {
+  line-height: 33px;
+}
+// End Header Content Form
