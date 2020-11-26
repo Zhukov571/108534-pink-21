@@ -1,8 +1,10 @@
 // Comments
 .comments {
-  padding-top: 50px;
-  padding-bottom: 60px;
+  padding-top: 72px;
+  padding-bottom: 101px;
   background-color: #fff;
+  position: relative;
+  z-index: 0;
 }
 
 .comments__slide {
@@ -11,15 +13,30 @@
   align-items: center;
 }
 
+@media (min-width: 1200px) {
+  .comments__slide::before {
+    display: block;
+    content: url(../../img/quotes.svg);
+    margin: 0 auto 43px;
+  }
+}
+
 .comments__slide-description {
   margin-top: 0;
   margin-bottom: 44px;
   order: 1;
   font-family: 'OpenSans-Regular', 'Arial', sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   color: #283645;
+}
+
+@media (min-width: 660px) {
+  .comments__slide-description {
+    font-size: 18px;
+  }
 }
 
 .comments__slide-title {
@@ -27,11 +44,65 @@
   margin-bottom: 31px;
   order: 0;
   font-family: 'OpenSans-Bold', 'Arial', sans-serif;
+  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
   color: #000000;
 }
+
+.comments__slide-text {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .comments__slide-title {
+    order: 1;
+    font-size: 20px;
+    margin-bottom: 35px;
+  }
+
+  .comments__slide-description {
+    order: 0;
+    max-width: 620px;
+    margin-bottom: 35px;
+  }
+
+  .comments__slide-text {
+    display: block;
+    font-family: 'OpenSans-Regular', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #283645;
+  }
+}
+
+@media (min-width:1200px) {
+  .comments__slide-title {
+    font-size: 24px;
+  }
+
+  .comments__slide-text {
+    font-size: 18px;
+  }
+
+  .comments__slide-description {
+    max-width: 100%;
+  }
+
+  .br__mobile,
+  .br__tablet {
+    display: none;
+  }
+
+  .br__dekstop {
+    display: block;
+  }
+
+}
+
+
 // End Comments
 
 // Carousel bullet
@@ -39,6 +110,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  .comments__bullet-box {
+    display: none;
+  }
 }
 
 .comments__carousel-bullet {
