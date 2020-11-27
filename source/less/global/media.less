@@ -2,24 +2,36 @@
   margin: 0;
 }
 
-.container   {
-  padding: 0 20px;
+.container {
+  padding: 0 22px;
+  max-width: 984px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
-// Dekstop
-
-// End Dekstop
-
-
-
-// Tqable
-// End Tablet
-
-
-// Mobile
-@media screen and (max-width: 320px) {
+@media (min-width: 660px) {
   .container {
-    padding: 0 22px;
+    padding: 0 20px;
+    max-width: 980px;
   }
 }
-// End Mobile
+
+.study {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .study {
+    display: block;
+  }
+}
+
+.br__tablet {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .br__tablet {
+    display: block;
+  }
+}

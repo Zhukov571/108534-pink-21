@@ -1,20 +1,85 @@
 // Offers
 .offers {
-  padding-top: 127px;
+  padding-top: 65px;
   padding-bottom: 49px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
+}
+
+@media (min-width: 660px) {
+  .offers {
+    padding-top: 56px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .offers {
+    padding-top: 56px;
+    padding-bottom: 100px;
+  }
+}
+
+.offers__table {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .offers__table {
+    display: table;
+    table-layout: fixed;
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+  }
+}
+
+@media (min-width: 1200px) {
+  .offers__table {
+    width: 100%;
+  }
 }
 
 .offers__table-title {
   background-color: #283645;
-  border: 2px solid #283645;
-  border-radius: 1px 0px 0px 0px;
-  font-family: 'OpenSans-Bold', 'Arial', sans-serif;
+  border-radius: 1px 0 0 0;
+  font-family: "OpenSans-Bold", "Arial", sans-serif;
+  font-weight: 700;
   font-size: 16px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+
+@media (min-width: 660px) {
+  .offers__table-title {
+    font-size: 16px;
+    line-height: 30px;
+    border: none;
+    padding: 8px 39px 7px;
+  }
+}
+
+@media (min-width: 660px) {
+  .offers__table-standart {
+    border-left: 2px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
+    padding: 8px 33px 7px;
+  }
+
+  .offers__left-border {
+    border-radius: 6px 0 0 0;
+  }
+
+  .offers__right-border {
+    border-radius: 0 6px 0 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .offers__table-title {
+    padding: 17px 33px 22px;
+  }
 }
 
 .offers__table-currency {
@@ -23,13 +88,41 @@
   font-size: 18px;
 }
 
+@media (min-width: 660px) {
+  .offers__table-currency {
+    font-family: "OpenSans-Light", "Arial", sans-serif;
+    font-weight: 300;
+  }
+}
+
 .offers__table-cell {
-  font-family: 'OpenSans-Regular', 'Arial', sans-serif;
+  font-family: "OpenSans-Regular", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 30px;
   text-align: center;
   text-transform: uppercase;
   color: #283645;
+}
+
+@media (min-width: 660px) {
+  .offers__table-cell {
+    border: 2px solid #e5e5e5;
+    background-color: #ffffff;
+    width: 25%;
+    height: 41px;
+    vertical-align: middle;
+  }
+
+  .offers__table-name {
+    padding-left: 15px;
+    text-align-last: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .offers__table-cell {
+    height: 55px;
+  }
 }
 // End Offers
 
@@ -37,42 +130,47 @@
 .offers__carousel {
   max-width: 276px;
   margin: 0 auto 45px;
- }
+}
+
+@media (min-width: 660px) {
+  .offers__carousel {
+    display: none;
+  }
+}
 
 .offers__carousel-rate {
   padding: 9px 0 8px;
   text-align: center;
   background-color: #283645;
-  border: 2px solid #283645;
-  border-radius: 1px 0px 0px 0px;
   box-sizing: border-box;
 }
 
 .offers__title {
   font-style: normal;
-  font-family: 'OpenSans-Bold', 'Arial', sans-serif;
+  font-family: "OpenSans-Bold", "Arial", sans-serif;
+  font-weight: 700;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 0;
   margin-bottom: 15px;
 }
 
 .offers__carousel-currency {
   display: block;
-  font-family: 'OpenSans-Regular', 'Arial', sans-serif;
+  font-family: "OpenSans-Regular", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .offers__carousel-package {
-  background-color: #FFFFFF;
-  border: 2px solid #E5E5E5;
-  border-radius: 1px 0px 0px 0px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
   box-sizing: border-box;
 }
 
@@ -84,7 +182,8 @@
 
 .offers__carousel-name {
   margin: 0;
-  font-family: 'OpenSans-Regular', 'Arial', sans-serif;
+  font-family: "OpenSans-Regular", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
@@ -103,6 +202,12 @@
   justify-content: center;
 }
 
+@media (min-width: 660px) {
+  .offers__bullet-box {
+    display: none;
+  }
+}
+
 .offers__carousel-bullet {
   width: 6px;
   height: 6px;
@@ -117,7 +222,7 @@
 }
 
 .offers__carousel-bullet.active {
-  background: #FFFFFF;
+  background: #ffffff;
   border: 3px solid #283645;
 }
 // End Carousel bullet
