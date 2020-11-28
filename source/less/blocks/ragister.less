@@ -1,12 +1,41 @@
 // Register
 .register {
-  padding: 55px 0 44px;
   background-color: #ffffff;
+  padding-bottom: 44px;
+}
+
+@media (min-width: 660px) {
+  .register {
+    padding-bottom: 51px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .register {
+    padding-bottom: 69px;
+    width: 50%;
+    padding-right: 74px;
+    box-sizing: border-box;
+  }
 }
 
 .register__box-label {
   display: block;
   margin-bottom: 29px;
+}
+
+@media (min-width: 660px) {
+  .register__box-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 56px;
+  }
+}
+
+@media (min-width: 660px) {
+  .register__box-label {
+    margin-bottom: 59px;
+  }
 }
 
 .register__box-label:last-child {
@@ -69,5 +98,11 @@
   line-height: 30px;
   text-transform: uppercase;
   color: #d22856;
+}
+
+@media (min-width: 660px) {
+  .register__box-span {
+    margin: 0 20px 0 0;
+  }
 }
 // End Register

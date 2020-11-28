@@ -6,23 +6,126 @@
   line-height: 30px;
   text-align: center;
   color: #283645;
+  background-color: #ffffff;
   margin-top: 0;
   margin-bottom: 60px;
   padding: 54px 22px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.gallery__panorame-title::after {
+  position: absolute;
+  z-index: 1;
+  content: "Панорама дня";
+  width: 140px;
+  height: 36px;
+  font-family: "OpenSans-Bold";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #D22856;
+  bottom: -95px;
+  right: 20px;
+  box-sizing: border-box;
+  padding-top: 7px;
+  cursor: pointer;
+}
+
+@media (min-width: 660px) {
+  .gallery__panorame-title {
+    font-size: 18px;
+    padding: 100px 0 85px;
+  }
+
+  .gallery__panorame-title::after {
+    position: absolute;
+    z-index: 1;
+    content: "Панорама дня";
+    width: 140px;
+    height: 36px;
+    font-family: "OpenSans-Bold";
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #D22856;
+    bottom: -135px;
+    right: 20px;
+    box-sizing: border-box;
+    padding-top: 7px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery__panorame-title::after {
+    position: absolute;
+    z-index: 1;
+    content: "Панорама дня";
+    width: 140px;
+    height: 36px;
+    font-family: "OpenSans-Bold";
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #D22856;
+    bottom: -135px;
+    right: 150px;
+    box-sizing: border-box;
+    padding-top: 7px;
+  }
+}
+
+.gallery__picture-comment,
+.gallery__panorame-comment {
+  background-color: #f2f2f2;
+  padding: 25px 26px 17px;
 }
 
 .gallery__panorame-comment {
-  background-color: #f2f2f2;
-  padding: 25px 17px 0 26px;
+  margin-bottom: 20px;
 }
 
-.gallery__panorame-comment,
-.gallery__card-itme {
+@media (min-width: 660px) {
+  .gallery__picture-comment,
+  .gallery__panorame-comment {
+    background-color: #f2f2f2;
+    padding: 30px 30px 31px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery__picture-comment,
+  .gallery__panorame-comment {
+    background-color: #f2f2f2;
+    padding: 31px 30px 27px;
+  }
+}
+
+.gallery__panoramet-commen {
   margin-bottom: 30px;
 }
 
-.gallery__card-itme:last-child {
+.gallery__card-list-item {
+  margin-bottom: 20px;
+}
+
+.gallery__card-list-item:last-child {
   margin-bottom: 0;
+}
+
+@media (min-width: 660px) {
+  .gallery__card-list-item {
+    margin: 0;
+  }
 }
 
 .gallery__panorame-image,
@@ -31,9 +134,71 @@
   margin: 0 auto;
 }
 
-.gallery__card {
+.gallery__panorame-image {
+  width: 320px;
+  min-height: 137px;
+}
+
+@media (min-width: 660px) {
+  .gallery__panorame-image {
+    width: 680px;
+    min-height: 509px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery__panorame-image {
+    width: 1200px;
+    min-height: 509px;
+  }
+}
+
+.gallery__picture {
+  width: 280px;
+  height: 180px;
+}
+
+@media (min-width: 660px) {
+  .gallery__picture {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 660px) {
+  .gallery__picture {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+.gallery__card-list {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: 660px) {
+  .gallery__card-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .gallery__card-list-item {
+    height: 100%;
+  }
+
+  .gallery__card-item {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery__card-list {
+    grid-template-columns: repeat(3, 300px);
+    row-gap: 54px;
+  }
 }
 
 .gallery__comment-username {
@@ -73,7 +238,23 @@
   color: #d22856;
 }
 
+@media (min-width: 660px) {
+  .gallery__comment-likes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+  }
+}
+
 .gallery__comment-icon {
   margin-right: 18px;
+}
+
+@media (min-width: 660px) {
+  .gallery__comment-icon {
+    order: 1;
+    margin-right: 0;
+  }
 }
 // End Gallery

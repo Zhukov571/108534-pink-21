@@ -1,12 +1,83 @@
 
 // Form Main
+@media (min-width: 660px) {
+  .form__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .register {
+    order: 0;
+  }
+
+  .annexes {
+    order: 1;
+  }
+
+  .data {
+    order: 2;
+  }
+
+  .achivment {
+    order: 3;
+  }
+
+  .emoution {
+    order: 4;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .form__title {
-  padding-top: 54px;
+  padding: 54px 0 55px;
   margin: 0;
   font-family: "OpenSans-Regular", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 38px;
   text-align: center;
   color: #283645;
 }
+
+@media (min-width: 660px) {
+  .form__title {
+    padding: 100px 0 82px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form__title {
+    padding-bottom: 95px;
+  }
+}
+
+@media (max-width: 320px) {
+  .fieldset {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: 660px) {
+  .fieldset {
+    padding: 0;
+  }
+}
+
+@media (min-width: 660px) {
+  .legend {
+    margin: 0 auto;
+  }
+}
+
 // End Form
