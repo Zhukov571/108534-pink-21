@@ -3,6 +3,25 @@
   padding-top: 42px;
 }
 
+@media (min-width: 1200px) {
+  .emoution {
+    width: 100%;
+  }
+}
+
+@media (min-width: 660px) {
+  .emoution__fieldset {
+    margin-bottom: 70px;
+    padding: 40px 58px 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .emoution__fieldset {
+    padding: 35px 58px 34px;
+  }
+}
+
 .emoution__title {
   font-family: "OpenSans-Regular", "Arial", sans-serif;
   font-weight: 400;
@@ -13,10 +32,17 @@
   color: #d22856;
 }
 
+@media (min-width: 660px) {
+  .emoution__title {
+    padding: 0 38px;
+  }
+}
+
 .emoution__text {
   resize: none;
   display: block;
-  max-width: 100%;
+  width: 100%;
+  min-height: 197px;
   padding: 22px 20px 0;
   margin-bottom: 52px;
   border: 2px solid #e5e5e5;
@@ -27,6 +53,37 @@
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+}
+
+@media (min-width: 660px) {
+  .emoution__text {
+    min-height: 189px;
+    margin-bottom: 0;
+    padding-top: 23px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .emoution__text {
+    min-height: 124px;
+    margin-bottom: 0;
+    padding: 23px 23px 0;
+  }
+}
+
+.emoution__box {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 660px) {
+  .emoution__box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .emoution__box-button {
@@ -43,6 +100,12 @@
   max-width: 296px;
   width: 100%;
   margin-bottom: 40px;
+}
+
+@media (min-width: 660px) {
+  .emoution__box-button {
+    margin-bottom: 0;
+  }
 }
 
 .emoution__warning {

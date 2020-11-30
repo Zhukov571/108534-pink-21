@@ -5,6 +5,33 @@
   background-color: #f2f2f2;
 }
 
+@media (min-width: 660px) {
+  .achivment {
+    margin: 0 -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: 1200px) {
+  .achivment {
+    width: 100%;
+  }
+}
+
+@media (min-width: 660px) {
+  .achivment__fieldset {
+    padding: 54px 0 50px 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .achivment__fieldset {
+    padding: 54px 60px 57px;
+  }
+}
+
 .achivment__title {
   margin-top: 0;
   margin-bottom: 44px;
@@ -17,17 +44,37 @@
   color: #d22856;
 }
 
+@media (min-width: 660px) {
+  .achivment__title {
+    padding: 0 31px;
+    margin: 0;
+  }
+}
+
 .achivment__box {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: 1200px) {
+  .achivment__box {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .achivment__box-item {
   margin-bottom: 47px;
 }
 
-.achivment__box-item:last-child {
+.achivment__box-items:last-child .achivment__box-item:last-child {
   margin-bottom: 0;
+}
+
+@media (min-width: 1200px) {
+  .achivment__box-item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .achivment__box-label {

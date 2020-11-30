@@ -28,6 +28,20 @@
   }
 }
 
+.footer__logo-dekstop {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .footer__logo-mobiletablet {
+    display: none;
+  }
+
+  .footer__logo-dekstop {
+    display: block;
+  }
+}
+
 .footer__social {
   display: flex;
   align-items: center;
@@ -48,8 +62,8 @@
   height: 48px;
   margin-right: 14px;
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 3px solid #283645;
+  background-color: #ffffff;
+  border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 50%;
 }
 
