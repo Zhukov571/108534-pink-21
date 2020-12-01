@@ -12,7 +12,7 @@
 
 .upload__title {
   margin: 0;
-  padding-bottom: 52px;
+  padding-bottom: 45px;
   font-family: "OpenSans-Regular", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -35,8 +35,25 @@
 }
 
 .upload__wrapper {
-  padding: 20px 0 41px;
   background-color: #f2f2f2;
+  margin: 0 -22px;
+  padding: 20px 22px 41px;
+}
+
+@media (min-width: 660px) {
+  .upload__wrapper {
+    margin: 0 -20px;
+    display: flex;
+    padding: 47px 20px 54px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .upload__wrapper {
+    margin: 0;
+    display: flex;
+    padding: 47px 0 54px;
+  }
 }
 
 .upload__photo {
@@ -44,21 +61,132 @@
   margin: 0 auto 42px;
 }
 
-.upload__button-box {
+@media (min-width: 660px) {
+  .upload__photo {
+    margin-left: 0;
+    margin-right: 49px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .upload__photo {
+    margin-left: 60px;
+    margin-right: 90px;
+  }
+}
+
+.upload__button-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+@media (min-width: 660px) {
+  .upload__button-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.upload__button-box {
+  margin-right: 35px;
+  min-width: 48px;
+}
+
+.upload__button-box:last-child {
+  margin-right: 0;
+}
+
+@media (min-width: 660px) {
+  .upload__button-box {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    margin-bottom: 52px;
+  }
+
+  .upload__button-box:last-child {
+    margin-bottom: 27px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .upload__fill-box {
+    border-top: solid 1px rgba(40, 54, 69, 0.1);
+    border-bottom: solid 1px rgba(40, 54, 69, 0.1);
+    padding: 15px 0;
+  }
+
+  .upload__button-box {
+    margin-bottom: 29px;
+  }
+
+  .upload__button-box:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .upload__button {
   background-color: transparent;
   border: none;
+  padding: 0;
+}
+
+@media (min-width: 660px) {
+  .upload__button {
+    margin-right: 29px;
+  }
+
+  .upload__button:last-child {
+    margin-right: 0;
+  }
+}
+
+.upload__button-icon {
+  filter: grayscale(100%);
+  opacity: 0.3;
+}
+
+.active .upload__button-icon {
+  filter: none;
+  opacity: 1;
+}
+
+@media (min-width: 660px) {
+  .upload__button-icon {
+    width: 22px;
+    height: 22px;
+    filter: none;
+    opacity: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .upload__button-icon {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .upload__range-conrtols {
   border-bottom: 1px solid rgba(40, 54, 69, 0.1);
-  padding-bottom: 34px;
+}
+
+@media (max-width: 659px) {
+  .upload__range-conrtols {
+    display: none;
+  }
+
+  .active .upload__range-conrtols {
+    display: block;
+    position: absolute;
+    bottom: -36px;
+    left: 40px;
+  }
 }
 
 .upload__scale-bar {
@@ -68,6 +196,18 @@
   height: 2px;
   background: #283645;
   margin: 0 auto;
+}
+
+@media (min-width: 660px) {
+  .upload__scale-bar {
+    width: 202px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .upload__scale-bar {
+    width: 288px;
+  }
 }
 
 .upload__togle {
@@ -83,12 +223,59 @@
   top: -6px;
 }
 
+@media (min-width: 660px) {
+  .fill-togle {
+    left: 20px;
+  }
+
+  .contrast-togle {
+    right: 95px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .crop-togle {
+    left: 69px;
+  }
+
+  .fill-togle {
+    left: 247px;
+  }
+
+  .contrast-togle {
+    left: 160px;
+  }
+}
+
+
 .upload__buttons {
   padding-top: 38px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  border-top: solid 1px rgba(40, 54, 69, 0.1);
+}
+
+@media (min-width: 660px) {
+  .upload__buttons {
+    padding-top: 65px;
+  }
+}
+
+@media (min-width: 660px) {
+  .upload__buttons {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border: none;
+  }
+}
+
+.upload__button,
+.upload__togle,
+.upload__buttons-post,
+.upload__buttons-cancel {
+  cursor: pointer;
 }
 
 .upload__buttons-post {
@@ -107,6 +294,18 @@
   margin-bottom: 12px;
 }
 
+@media (min-width: 660px) {
+  .upload__buttons-post {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .upload__buttons-post {
+    margin-right: 44px;
+  }
+}
+
 .upload__buttons-cancel {
   background-color: #f2f2f2;
   border: 3px solid rgba(40, 54, 69, 0.1);
@@ -120,4 +319,12 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
+}
+
+@media (min-width: 1200px) {
+  .upload__buttons-post,
+  .upload__buttons-cancel {
+    max-width: 183px;
+    margin-bottom: 0;
+  }
 }
