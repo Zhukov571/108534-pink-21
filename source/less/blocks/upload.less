@@ -185,7 +185,8 @@
     display: block;
     position: absolute;
     bottom: -36px;
-    left: 40px;
+    left: 0;
+    right: 0;
   }
 }
 
@@ -261,12 +262,12 @@
   .upload__buttons {
     display: block;
     padding-top: 65px;
-
   }
 }
 
-@media (min-width: 660px) {
+@media (min-width: 1200px) {
   .upload__buttons {
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     border: none;
