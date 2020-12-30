@@ -1,0 +1,146 @@
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+}
+
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__wrapper {
+  margin: 0 auto;
+  display: flex;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 460px;
+  width: 100%;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.modal__title {
+  padding-top: 44px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0 0 37px;
+}
+
+.modal__description {
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  text-align: center;
+  margin: 0 0 40px;
+}
+
+.modal__bottom {
+  background: #f2f2f2;
+  width: 100%;
+  padding: 7px 0 37px;
+  box-sizing: border-box;
+}
+
+.modal__bottom-error {
+  background-color: #ffffff;
+}
+
+.modal__buttons {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background: #2aab6d;
+  border: 2px solid #2aab6d;
+  border-radius: 1px;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 13px 0 12px;
+  max-width: 276px;
+  width: 100%;
+}
+
+.modal__buttons:hover {
+  background-color: #1c9b5e;
+  transition: 0.3s;
+}
+
+.modal__buttons:active {
+  color: rgba(255, 255, 255, 0.3);
+  transition: 0.3s;
+}
+
+.modal__buttons:disabled {
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+  transition: 0.3s;
+}
+
+@media (min-width: 660px) {
+  .modal__top {
+    padding: 22px 55px 0;
+  }
+
+  .modal__title {
+    padding-top: 0;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal__description {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+
+  .br__tablet {
+    display: block;
+  }
+
+  .modal__bottom {
+    padding: 38px 0 37px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal__wrapper {
+    max-width: 780px;
+  }
+
+  .modal__top {
+    padding-top: 29px;
+  }
+
+  .modal__description {
+    margin-bottom: 68px;
+  }
+
+  .br__tablet {
+    display: none;
+  }
+
+  .br__dekstop {
+    display: block;
+  }
+
+  .modal__bottom {
+    padding: 46px 0 46px;
+  }
+
+  .modal__bottom-error {
+    background-color: #f2f2f2;
+  }
+
+  .clouse__button {
+    max-width: 456px;
+  }
+}

@@ -1,6 +1,13 @@
 // Emoution
 .emoution {
-  padding-top: 42px;
+  padding-top: 38px;
+}
+
+@media (min-width: 660px) {
+  .emoution {
+    padding-top: 12px;
+    padding-bottom: 50px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -11,8 +18,8 @@
 
 @media (min-width: 660px) {
   .emoution__fieldset {
-    margin-bottom: 70px;
-    padding: 40px 58px 40px;
+    margin-bottom: 69px;
+    padding: 37px 63px 54px 53px;
   }
 }
 
@@ -24,14 +31,13 @@
 }
 
 .emoution__title {
-  font-family: "OpenSans-Regular", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
   color: #d22856;
-  margin: 0 auto 22px;
+  margin: 0 auto 18px;
 }
 
 @media (min-width: 660px) {
@@ -46,12 +52,11 @@
   display: block;
   width: 100%;
   min-height: 197px;
-  padding: 22px 20px 0;
+  padding: 13px 20px 0;
   margin-bottom: 52px;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
   box-sizing: border-box;
-  font-family: "OpenSans-Regular", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -62,7 +67,7 @@
   .emoution__text {
     min-height: 189px;
     margin-bottom: 0;
-    padding-top: 23px;
+    padding: 14px 0 0;
     text-align: center;
   }
 }
@@ -71,7 +76,8 @@
   .emoution__text {
     min-height: 124px;
     margin-bottom: 0;
-    padding: 23px 23px 0;
+    padding: 11px 17px 0;
+    text-align: left;
   }
 }
 
@@ -90,7 +96,6 @@
 }
 
 .emoution__box-button {
-  font-family: "OpenSans-Bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -102,8 +107,24 @@
   padding: 13px 10px 12px;
   max-width: 296px;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
   cursor: pointer;
+}
+
+.emoution__box-button:hover {
+  background-color: #1c9b5e;
+  transition: 0.3s;
+}
+
+.emoution__box-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  transition: 0.3s;
+}
+
+.emoution__box-button:disabled {
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+  transition: 0.3s;
 }
 
 @media (min-width: 660px) {
@@ -114,7 +135,6 @@
 
 .emoution__warning {
   display: block;
-  font-family: "OpenSans-Regular", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;

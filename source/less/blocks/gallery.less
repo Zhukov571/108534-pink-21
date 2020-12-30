@@ -1,6 +1,5 @@
 // Gallery
 .gallery__panorame-title {
-  font-family: "OpenSans-Regular", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -8,13 +7,46 @@
   color: #283645;
   background-color: #ffffff;
   margin-top: 0;
-  margin-bottom: 60px;
-  padding: 54px 22px 0;
+  margin-bottom: 50px;
+  padding: 44px 22px 0;
+}
+
+.br__mobile {
+  display: block;
+}
+
+.br__tablet,
+.br__dekstop {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .br__mobile,
+  .br__dekstop {
+    display: none;
+  }
+
+  .br__tablet {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .br__mobile,
+  .br__tablet {
+    display: none;
+  }
+
+  .br__dekstop {
+    display: block;
+  }
 }
 
 .gallery__panorame-box {
   position: relative;
   z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .gallery__panorame-box::before {
@@ -23,7 +55,6 @@
   content: "Панорама дня";
   width: 140px;
   height: 36px;
-  font-family: "OpenSans-Bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 24px;
@@ -33,33 +64,44 @@
   background-color: #d22856;
   top: 0;
   bottom: auto;
-  right: 20px;
+  right: 21px;
   box-sizing: border-box;
-  padding-top: 7px;
+  padding-top: 5px;
   cursor: pointer;
 }
 
 @media (min-width: 660px) {
   .gallery__panorame-title {
     font-size: 18px;
-    padding: 100px 0 85px;
+    padding: 90px 0 28px;
   }
 
   .gallery__panorame-box::before {
     right: 20px;
+    top: 11%;
   }
 }
 
 @media (min-width: 1200px) {
+  .gallery__panorame-title {
+    padding-bottom: 40px;
+  }
+
   .gallery__panorame-box::before {
-    right: 150px;
+    right: 130px;
+    top: 10%;
+    padding-top: 8px;
   }
 }
 
 .gallery__picture-comment,
 .gallery__panorame-comment {
   background-color: #f2f2f2;
-  padding: 25px 22px 17px;
+  padding: 17px 0 17px 16px;
+}
+
+.br__tabley {
+  display: none;
 }
 
 .gallery__panorame-comment {
@@ -70,10 +112,23 @@
   .gallery__picture-comment,
   .gallery__panorame-comment {
     background-color: #f2f2f2;
-    padding: 30px 30px 31px;
+    padding: 22px 30px 25px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+  }
+
+  .gallery__picture-comment {
+    min-height: 155px;
+    box-sizing: border-box;
+  }
+
+  .br__mobile {
+    display: none;
+  }
+
+  .br__tabley {
+    display: block;
   }
 }
 
@@ -81,7 +136,15 @@
   .gallery__picture-comment,
   .gallery__panorame-comment {
     background-color: #f2f2f2;
-    padding: 31px 30px 27px;
+    padding: 23px 30px 25px 27px;
+  }
+
+  .br__mobile {
+    display: none;
+  }
+
+  .br__tabley {
+    display: none;
   }
 }
 
@@ -109,17 +172,41 @@
   margin: 0 auto;
 }
 
-.gallery__panorame-image {
-  width: 100%;
+@media (min-width: 660px) {
+  .gallery__panorame-image {
+    width: 660px;
+    height: 509px;
+  }
+
+  .gallery__picture {
+    width: 300px;
+    height: 300px;
+  }
 }
 
-.gallery__picture {
-  width: 100%;
+@media (min-width: 1200px) {
+  .gallery__panorame-image {
+    width: 1200px;
+    height: 506px;
+  }
+
+  .gallery__picture {
+    width: 300px;
+    height: 400px;
+  }
 }
 
 .gallery__card-list {
   margin: 0;
   padding: 0;
+}
+
+.gallery__card-item {
+  margin-bottom: 20px;
+}
+
+.gallery__card-item:last-child {
+  margin-bottom: 0;
 }
 
 @media (min-width: 660px) {
@@ -136,6 +223,7 @@
   .gallery__card-item {
     display: flex;
     flex-direction: column;
+    margin-bottom: 0;
   }
 
   .gellery__cartd-article {
@@ -154,13 +242,14 @@
 
 .gallery__comment-username {
   margin-top: 0;
-  margin-bottom: 14px;
-  font-family: "OpenSans-Bold", "Arial", sans-serif;
-  font-weight: 700;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
 }
 
 .gallery__comment-time {
-  font-family: "OpenSans-Light", "Arial", sans-serif;
   font-weight: 300;
   font-size: 12px;
   line-height: 24px;
@@ -170,17 +259,15 @@
 }
 
 .gallery__comment-text {
-  font-family: "OpenSans-Regular", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   text-align-last: left;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 13px;
 }
 
 .gallery__comment-likes {
-  font-family: "OpenSans-Regular", "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
@@ -199,7 +286,7 @@
 }
 
 .gallery__comment-icon {
-  margin-right: 18px;
+  margin-right: 15px;
 }
 
 @media (min-width: 660px) {
@@ -213,12 +300,13 @@
   .gallery__panorame-comment {
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 48px;
   }
 
   .gallery__panorame-username {
     order: 0;
     width: 50%;
-    margin-bottom: 14px;
+    margin-bottom: 0;
   }
 
   .gallery__panorame-text {
@@ -232,7 +320,7 @@
     justify-content: end;
     width: 50%;
     margin-top: 0;
-    margin-bottom: 14px;
+    margin-bottom: 0;
   }
 
   .gallery__panorame-icon {

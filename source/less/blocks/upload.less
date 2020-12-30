@@ -1,19 +1,22 @@
 .upload {
-  padding-top: 49px;
+  padding-top: 43px;
 }
 
 @media (min-width: 660px) {
-  padding-top: 73px;
+  .upload {
+    padding-top: 61px;
+  }
 }
 
 @media (min-width: 1200px) {
-  padding-top: 67px;
+  .upload {
+    padding-top: 57px;
+  }
 }
 
 .upload__title {
   margin: 0;
   padding-bottom: 45px;
-  font-family: "OpenSans-Regular", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -23,28 +26,28 @@
 
 @media (min-width: 660px) {
   .upload__title {
-    padding-bottom: 78px;
+    padding-bottom: 70px;
     font-size: 18px;
   }
 }
 
 @media (min-width: 1200px) {
   .upload__title {
-    padding-bottom: 75px;
+    padding-bottom: 68px;
   }
 }
 
 .upload__wrapper {
   background-color: #f2f2f2;
-  margin: 0 -22px;
-  padding: 20px 22px 41px;
+  margin: 0 -20px;
+  padding: 18px 20px 29px;
 }
 
 @media (min-width: 660px) {
   .upload__wrapper {
     margin: 0 -20px;
     display: flex;
-    padding: 47px 20px 54px;
+    padding: 57px 20px 12px;
   }
 }
 
@@ -52,7 +55,7 @@
   .upload__wrapper {
     margin: 0;
     display: flex;
-    padding: 47px 0 54px;
+    padding: 55px 60px 42px 80px;
   }
 }
 
@@ -65,14 +68,19 @@
   .upload__photo {
     margin-left: 0;
     margin-right: 49px;
+    width: 300px;
+    height: 400px;
   }
 }
 
 @media (min-width: 1200px) {
   .upload__photo {
-    margin-left: 60px;
     margin-right: 90px;
   }
+}
+
+.upload__wrapper-box {
+  width: 100%;
 }
 
 .upload__button-wrapper {
@@ -81,52 +89,62 @@
   justify-content: center;
   margin-bottom: 70px;
   position: relative;
+  text-align: center;
 }
 
 @media (min-width: 660px) {
   .upload__button-wrapper {
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
     margin-bottom: 0;
+    padding-top: 8px;
+    align-items: normal;
   }
 }
 
-.upload__button-box {
-  margin-right: 35px;
-  min-width: 48px;
+@media (min-width: 1200px) {
+  .upload__button-wrapper {
+    margin-top: -2px;
+    padding-top: 0;
+  }
 }
 
-.upload__button-box:last-child {
-  margin-right: 0;
+.upload__button-box:not(:last-child) {
+  margin-right: 35px;
 }
 
 @media (min-width: 660px) {
   .upload__button-box {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+    margin-bottom: 22px;
+    padding-bottom: 23px;
+  }
+
+  .upload__button-box:not(:last-child) {
     margin-right: 0;
-    margin-bottom: 52px;
   }
 
   .upload__button-box:last-child {
-    margin-bottom: 27px;
+    margin-bottom: 65px;
   }
 }
 
 @media (min-width: 1200px) {
   .upload__fill-box {
-    border-top: solid 1px rgba(40, 54, 69, 0.1);
     border-bottom: solid 1px rgba(40, 54, 69, 0.1);
-    padding: 15px 0;
-  }
-
-  .upload__button-box {
-    margin-bottom: 29px;
   }
 
   .upload__button-box:last-child {
+    border-bottom: none;
     margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .upload__button-box {
+    margin-bottom: 15px;
+    padding-bottom: 11px;
   }
 }
 
@@ -146,6 +164,12 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .upload__button {
+    margin-right: 48px;
+  }
+}
+
 .upload__button-icon {
   filter: grayscale(100%);
   opacity: 0.3;
@@ -154,6 +178,16 @@
 .active .upload__button-icon {
   filter: none;
   opacity: 1;
+}
+
+.upload__button-icon:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.upload__button-icon:active {
+  fill: #d22856;
+  transition: 0.3s;
 }
 
 @media (min-width: 660px) {
@@ -166,14 +200,24 @@
 }
 
 @media (min-width: 1200px) {
-  .upload__button-icon {
-    width: 100%;
-    height: 100%;
+  .crop-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .fill-icon {
+    width: 48px;
+    height: 43px;
+  }
+
+  .contrast-iocn {
+    width: 32px;
+    height: 32px;
   }
 }
 
 .upload__range-conrtols {
-  border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+  width: 100%;
 }
 
 @media (max-width: 659px) {
@@ -187,13 +231,21 @@
     bottom: -36px;
     left: 0;
     right: 0;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .upload__range-conrtols {
+    padding: 0;
   }
 }
 
 .upload__scale-bar {
   position: relative;
   z-index: 0;
-  width: 240px;
+  width: 100%;
   height: 2px;
   background: #283645;
   margin: 0 auto;
@@ -201,13 +253,14 @@
 
 @media (min-width: 660px) {
   .upload__scale-bar {
-    width: 202px;
+    margin: 0;
+    max-width: 202px;
   }
 }
 
 @media (min-width: 1200px) {
   .upload__scale-bar {
-    width: 288px;
+    max-width: 288px;
   }
 }
 
@@ -224,13 +277,21 @@
   top: -6px;
 }
 
+.upload__togle:hover {
+  background: #d22856;
+}
+
 @media (min-width: 660px) {
+  .crop-togle {
+    right: 41px;
+  }
+
   .fill-togle {
-    left: 20px;
+    left: 25px;
   }
 
   .contrast-togle {
-    right: 95px;
+    right: 92px;
   }
 }
 
@@ -240,28 +301,36 @@
   }
 
   .fill-togle {
-    left: 247px;
+    left: 242px;
   }
 
   .contrast-togle {
-    left: 160px;
+    left: 171px;
   }
 }
-
 
 .upload__buttons {
   padding-top: 38px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  box-sizing: border-box;
   border-top: solid 1px rgba(40, 54, 69, 0.1);
 }
 
 @media (min-width: 660px) {
   .upload__buttons {
     display: block;
-    padding-top: 65px;
+    padding-top: 0;
+    border-top: none;
+  }
+}
+
+@media (min-width: 660.99px) and (max-width: 1199.99px) {
+  .upload__buttons {
+    display: flex;
   }
 }
 
@@ -271,6 +340,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     border: none;
+    padding-top: 165px;
   }
 }
 
@@ -287,8 +357,7 @@
   border-radius: 30px;
   max-width: 280px;
   width: 100%;
-  padding: 14px 0 16px;
-  font-family: "OpenSans-Bold", "Arial", sans-serif;
+  padding: 15px 0 16px;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
@@ -297,9 +366,19 @@
   margin-bottom: 12px;
 }
 
+.upload__buttons-post:hover {
+  color: #ffffff;
+  background: #d22856;
+}
+
+.upload__buttons-post:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 @media (min-width: 660px) {
   .upload__buttons-post {
     margin-bottom: 24px;
+    max-width: 258px;
   }
 }
 
@@ -318,10 +397,29 @@
   max-width: 280px;
   width: 100%;
   padding: 14px 0 16px;
-  font-family: "OpenSans-Bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
+}
+
+.upload__buttons-cancel:hover {
+  background-color: rgba(242, 242, 242, 0.3);
+  border: 3px solid rgba(40, 54, 69, 0.3);
+  color: rgba(40, 54, 69, 0.3);
+  transition: 0.3s;
+}
+
+.upload__buttons-cancel:active {
+  background-color: rgba(40, 54, 69, 0.3);
+  border: 3px solid rgba(40, 54, 69, 0);
+  color: rgba(255, 255, 255, 0.3);
+  transition: 0.3s;
+}
+
+@media (min-width: 660px) {
+  .upload__buttons-cancel {
+    max-width: 258px;
+  }
 }
 
 @media (min-width: 1200px) {
