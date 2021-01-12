@@ -5,26 +5,6 @@
     display: flex;
     flex-direction: column;
   }
-
-  .register {
-    order: 0;
-  }
-
-  .annexes {
-    order: 1;
-  }
-
-  .data {
-    order: 2;
-  }
-
-  .achivment {
-    order: 3;
-  }
-
-  .emoution {
-    order: 4;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -47,47 +27,27 @@
 
 @media (min-width: 660px) {
   .form__title {
+    margin: 0 auto;
+    max-width: 450px;
+    width: 100%;
     padding: 90px 0 73px;
     font-size: 18px;
+  }
+
+  .form__title-text {
+    display: block;
   }
 }
 
 @media (min-width: 1200px) {
   .form__title {
+    max-width: 780px;
     padding-top: 89px;
     padding-bottom: 86px;
   }
-}
 
-@media (max-width: 320px) {
-  .fieldset {
-    border: 0;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  .form__title-text {
+    display: inline-block;
   }
 }
-
-@media (min-width: 660px) {
-  .fieldset {
-    padding: 0;
-  }
-}
-
-@media (min-width: 660px) {
-  .legend {
-    margin: 0 auto;
-  }
-}
-
-.input-optional:hover {
-  border-color: #283645;
-  transition: 0.3s;
-}
-
-.input-optional:active {
-  border-color: #d22856;
-  transition: 0.3s;
-}
-
 // End Form

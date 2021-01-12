@@ -75,7 +75,9 @@
 
 @media (min-width: 660px) {
   .profit__title {
-    margin-bottom: 0;
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
     font-size: 40px;
     line-height: 54px;
   }
@@ -83,7 +85,9 @@
 
 @media (min-width: 1200px) {
   .profit__title {
-    margin-bottom: 0;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
     font-size: 50px;
     line-height: 68px;
   }
@@ -136,7 +140,7 @@
     display: block;
     width: 157px;
     height: 320px;
-    background-image: url("../../img/profit-img.png");
+    background-image: url("../img/profit-img.png");
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0 auto;
@@ -145,7 +149,7 @@
       content: "";
       width: 157px;
       height: 320px;
-      background-image: url("../../img/profit-img@2x.png");
+      background-image: url("../img/profit-img@2x.png");
       background-size: cover;
       background-repeat: no-repeat;
       margin: 0 auto;
@@ -169,7 +173,7 @@
     order: 0;
     width: 268px;
     height: 483px;
-    background-image: url("../../img/table-profit-img.png");
+    background-image: url("../img/table-profit-img.png");
     background-size: cover;
     background-repeat: no-repeat;
     margin-right: 43px;
@@ -182,7 +186,7 @@
       flex: 0 0 268px;
       width: 258px;
       height: 483px;
-      background-image: url("../../img/table-profit-img@2x.png");
+      background-image: url("../img/table-profit-img@2x.png");
       background-size: cover;
       background-repeat: no-repeat;
       margin-right: 40px;
@@ -204,11 +208,6 @@
     padding-top: 19px;
     order: 1;
   }
-
-  .br__mobile,
-  .br__dekstop {
-    display: none;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -219,23 +218,6 @@
     margin: -125px auto 0;
     padding-top: 0;
   }
-
-  .br__tablet {
-    display: none;
-  }
-
-  .br__mobile,
-  .br_table {
-    display: none;
-  }
-
-  .br__dekstop {
-    display: block;
-  }
-}
-
-.br__dekstop {
-  display: none;
 }
 
 .profit__item {
@@ -257,7 +239,7 @@
     margin-bottom: 0;
   }
 
-  .profit__item1::before {
+  .profit_item1::before {
     content: "";
     display: block;
     width: 186px;
@@ -278,7 +260,7 @@
     }
   }
 
-  .profit__item2::before {
+  .profit_item2::before {
     content: "";
     display: block;
     width: 186px;
@@ -299,7 +281,7 @@
     }
   }
 
-  .profit__item3::before {
+  .profit_item3::before {
     content: "";
     display: block;
     width: 186px;
@@ -316,10 +298,6 @@
       background-repeat: no-repeat;
       margin: 0 auto;
     }
-  }
-
-  .br__dekstop {
-    display: block;
   }
 }
 
@@ -340,8 +318,9 @@
 }
 
 .profit__item-title {
-  margin-top: 0;
-  margin-bottom: 11px;
+  max-width: 235px;
+  width: 100%;
+  margin: 0 auto 11px;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -364,7 +343,9 @@
 }
 
 .profit__item-description {
-  margin: 0;
+  max-width: 255px;
+  width: 100%;
+  margin: 0 auto;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -372,17 +353,17 @@
   color: #283645;
 }
 
+.profit__item-description br {
+  display: none;
+}
+
 @media (min-width: 660px) {
   .profit__item-description {
     line-height: 24px;
+    max-width: 320px;
   }
 
-  .br__mobile,
-  .br__dekstop {
-    display: none;
-  }
-
-  .br__tablet {
+  .profit__item-description br {
     display: block;
   }
 }
@@ -391,6 +372,10 @@
   .profit__item-description {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .profit__item-description br {
+    display: none;
   }
 }
 

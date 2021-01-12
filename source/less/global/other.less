@@ -33,3 +33,64 @@
   border-radius: 1px;
 }
 // End label
+
+// fieldset
+@media (max-width: 320px) {
+  .fieldset {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: 660px) {
+  .fieldset {
+    padding: 0;
+  }
+}
+// End fieldset
+
+// legend
+@media (min-width: 660px) {
+  .legend {
+    margin: 0 auto;
+  }
+}
+// End legend
+
+// input
+.input-optional:hover {
+  border-color: #283645;
+  transition: 0.3s;
+}
+
+.input-optional:active {
+  border-color: #d22856;
+  transition: 0.3s;
+}
+// End input
+
+// form order
+@media (min-width: 660px) {
+  .register {
+    order: 0;
+  }
+
+  .annexes {
+    order: 1;
+  }
+
+  .data {
+    order: 2;
+  }
+
+  .achivment {
+    order: 3;
+  }
+
+  .emoution {
+    order: 4;
+  }
+}
+// End form order

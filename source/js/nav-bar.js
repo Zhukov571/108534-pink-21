@@ -9,7 +9,7 @@ function allEventListners() {
 }
 
 function togglerClick() {
-  navToggler.classList.toggle('toggler-open');
+  navToggler.classList.toggle('header__toggler-open');
   navMenu.classList.toggle('open');
-  navMenuWrapper.classList.toggle('open-nav');
+  navMenuWrapper.classList.toggle('header__open-nav');
 }
