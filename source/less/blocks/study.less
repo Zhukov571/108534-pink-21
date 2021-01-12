@@ -1,9 +1,15 @@
 @media (min-width: 660px) {
   .study {
-    padding: 54px 0 59px;
+    padding: 53px 0 59px;
     background-color: #ffffff;
     position: relative;
     z-index: 0;
+  }
+}
+
+@media (min-width: 660.99px) and (max-width: 1199.99px) {
+  .study {
+    display: flex;
   }
 }
 
@@ -25,7 +31,7 @@
 @media (min-width: 660px) {
   .study__image {
     max-width: 238px;
-    margin-right: 71px;
+    margin-right: 73px;
   }
 }
 
@@ -38,10 +44,8 @@
 
 @media (min-width: 660px) {
   .study__box-title {
-    margin-top: 0;
-    margin-bottom: 11px;
+    margin: 0 0 11px;
     padding-top: 40px;
-    font-family: "OpenSans-Bold", "Arual", sans-serif;
     font-weight: bold;
     font-size: 30px;
     line-height: 36px;
@@ -55,7 +59,7 @@
     margin-bottom: 25px;
   }
 
-  .br__tablet {
+  .study__box-title br {
     display: none;
   }
 }
@@ -64,15 +68,10 @@
   .study__box-description {
     margin-top: 0;
     margin-bottom: 8px;
-    font-family: "OpenSans-Regular", "Arual", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     color: #283645;
-  }
-
-  .br__dekstop {
-    display: none;
   }
 }
 
@@ -84,23 +83,25 @@
     font-size: 18px;
     line-height: 30px;
   }
-
-  .br__tablet {
-    display: none;
-  }
-
-  .br__dekstop {
-    display: block;
-  }
 }
 
 @media (min-width: 660px) {
   .study__box-link {
-    font-family: "OpenSans-Regular", "Arual", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     color: #d22856;
+  }
+
+  .study__box-link:hover {
+    color: #283645;
+    transition: 0.3s;
+  }
+
+  .study__box-link:active {
+    color: #283645;
+    transition: 0.3s;
+    opacity: 0.3;
   }
 }
 

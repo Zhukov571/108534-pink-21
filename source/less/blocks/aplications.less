@@ -1,11 +1,12 @@
 // Aplications
 .aplications {
-  padding-top: 29px;
+  padding-top: 26px;
+  padding-bottom: 20px;
   display: flex;
   align-items: center;
   flex-direction: column;
   background-color: #1d2631;
-  margin: 0 -22px;
+  margin: 0 -20px;
 }
 
 @media (min-width: 660px) {
@@ -18,8 +19,7 @@
 }
 
 .aplication__button {
-  margin: 0 auto 38px;
-  font-family: "OpenSans-Bold", "Arial", sans-serif;
+  margin: 0 auto 30px;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
@@ -32,9 +32,22 @@
   cursor: pointer;
 }
 
+.aplication__button:hover {
+  background-color: #ffffff;
+  color: #d22856;
+  transition: 0.3s;
+}
+
+.aplication__button:active {
+  background-color: #ffffff;
+  color: rgba(210, 40, 86, 0.3);
+  transition: 0.3s;
+}
+
 @media (min-width: 660px) {
   .aplication__button {
     padding: 16px 46px 15px;
+    margin-bottom: 43px;
   }
 }
 
@@ -47,7 +60,13 @@
 }
 
 .aplication__box {
-  margin-bottom: 31px;
+  margin-bottom: 17px;
+}
+
+@media (min-width: 660px) {
+  .aplication__box {
+    margin-bottom: 31px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -59,7 +78,7 @@
 }
 
 .aplications__link {
-  margin-right: 49px;
+  margin-right: 31px;
 }
 
 @media (min-width: 1200px) {
@@ -73,8 +92,9 @@
 }
 
 .aplications__content-description {
-  margin-top: 0;
-  font-family: "OpenSans-Light", "Arial", sans-serif;
+  margin: 0 auto;
+  max-width: 240px;
+  width: 100%;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
@@ -85,6 +105,7 @@
 @media (min-width: 660px) {
   .aplications__content-description {
     font-size: 18px;
+    max-width: 300px;
   }
 }
 // End Aplications

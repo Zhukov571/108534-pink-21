@@ -1,12 +1,19 @@
 // Data
 .data {
-  padding: 42px 0 44px;
+  padding: 31px 0 46px;
+}
+
+@media (min-width: 660px) {
+  .data {
+    padding: 54px 0 22px;
+  }
 }
 
 @media (min-width: 1200px) {
   .data {
     width: 100%;
     padding-top: 51px;
+    padding-bottom: 40px;
   }
 }
 
@@ -17,29 +24,23 @@
 
 @media (min-width: 660px) {
   .data__fieldset {
-    padding: 46px 60px 37px;
+    padding: 31px 60px 28px 54px;
   }
 
   .data__fieldset-title {
     display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #d22856;
+    padding: 0 29px;
   }
 }
 
 @media (min-width: 1200px) {
   .data__fieldset {
     padding: 28px 55px 13px;
-  }
-}
-
-@media (min-width: 660px) {
-  .data__fieldset-title {
-    font-family: "OpenSans-Regular", "Arial", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: #d22856;
-    padding: 0 31px;
   }
 }
 
@@ -55,7 +56,7 @@
   }
 
   .data__box-label {
-    margin-bottom: 41px;
+    margin-bottom: 31px;
   }
 
   .data__box-label:last-child {
@@ -84,7 +85,7 @@
 
   .data__box-phone::after {
     position: absolute;
-    content: url("../../img/data-phone-icon.svg");
+    content: url("../img/data-phone-icon.svg");
     z-index: 0;
     width: 59px;
     height: 59px;
@@ -102,7 +103,7 @@
 
   .data__box-address::after {
     position: absolute;
-    content: url("../../img/data-mail-icon.svg");
+    content: url("../img/data-mail-icon.svg");
     z-index: 0;
     width: 59px;
     height: 59px;
@@ -123,7 +124,6 @@
   box-sizing: border-box;
   padding: 12px 0 13px 20px;
   width: 100%;
-  font-family: "OpenSans-Regular", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -132,7 +132,6 @@
 
 .data__phone-input,
 .data__address-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  font-family: "OpenSans-Regular", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -141,7 +140,6 @@
 
 .data__phone-input,
 .data__address-input::-moz-placeholder { /* Firefox 19+ */
-  font-family: "OpenSans-Regular", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -150,7 +148,6 @@
 
 .data__phone-input,
 .data__address-input:-ms-input-placeholder { /* IE 10+ */
-  font-family: "OpenSans-Regular", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -159,7 +156,6 @@
 
 .data__phone-input,
 .data__address-input:-moz-placeholder { /* Firefox 18- */
-  font-family: "OpenSans-Regular", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -167,19 +163,19 @@
 }
 
 .data__phone-input {
-  margin-bottom: 29px;
+  margin-bottom: 19px;
 }
 
 @media (min-width: 660px) {
   .data__phone-input {
     order: 0;
-    margin-bottom: 25px;
+    margin-bottom: 12px;
     padding-right: 69px;
   }
 
   .data__address-input {
     order: 2;
-    margin-bottom: 25px;
+    margin-bottom: 12px;
     padding-right: 69px;
   }
 }
@@ -194,9 +190,8 @@
 .data__span-phone,
 .data__span-address {
   display: block;
-  margin-left: 21px;
-  margin-bottom: 17px;
-  font-family: "OpenSans-Regular", "Arial", sans-serif;
+  margin-left: 23px;
+  margin-bottom: 7px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -207,11 +202,13 @@
 @media (min-width: 660px) {
   .data__span-phone {
     order: 1;
+    margin-left: 18px;
     margin-bottom: 0;
   }
 
   .data__span-address {
     order: 3;
+    margin-left: 18px;
     margin-bottom: 0;
   }
 }

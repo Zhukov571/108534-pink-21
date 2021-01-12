@@ -1,15 +1,14 @@
 // Annexes
 .annexes {
-  margin: 0 -22px;
-  padding: 42px 22px 42px;
+  margin: 0 -20px;
+  padding: 37px 20px 45px;
   background-color: #f2f2f2;
 }
 
 @media (min-width: 660px) {
   .annexes {
-    margin: 0 -20px;
-    padding: 0 20px;
     background-color: #ffffff;
+    padding-bottom: 0;
   }
 }
 
@@ -25,7 +24,6 @@
 .annexes__title {
   margin-top: 0;
   margin-bottom: 40px;
-  font-family: "OpenSans-Regular", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -49,7 +47,7 @@
 
 @media (min-width: 660px) {
   .annexes__box {
-    margin: 54px 0 54px 60px;
+    margin: 48px 0 57px 56px;
   }
 }
 
@@ -60,7 +58,7 @@
 }
 
 .annexes__box-iten {
-  margin-bottom: 46px;
+  margin-bottom: 45px;
 }
 
 .annexes__box-iten:last-child {
@@ -70,8 +68,7 @@
 .annexes__box-label {
   position: relative;
   z-index: 0;
-  padding-left: 61px;
-  font-family: "OpenSans-Regular", "Arial", sans-serif;
+  padding-left: 70px;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -79,19 +76,63 @@
   cursor: pointer;
 }
 
-.annexes__box-label::before {
-  position: absolute;
-  content: url("../../img/annexes-radio.svg");
-  z-index: 0;
-  top: -5px;
-  left: 0;
+@media (min-width: 660px) {
+  .annexes__box-label {
+    padding-left: 59px;
+  }
 }
 
-.annexes__box-input:checked + .annexes__box-label::before {
+@media (min-width: 1200px) {
+  .annexes__box-label {
+    padding-left: 62px;
+  }
+}
+
+.annexes__box-label::before {
   position: absolute;
-  content: url("../../img/annexes-radio-checked.svg");
+  content: "";
   z-index: 0;
   top: -5px;
   left: 0;
+  height: 37px;
+  width: 37px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+}
+
+.annexes__box-label:hover::before {
+  border-color: #283645;
+  transition: 0.3s;
+}
+
+.annexes__box-label + .annexes__box-input:focus::before {
+  border-color: #d22856;
+  transition: 0.3s;
+}
+
+.annexes__box-label:active::before {
+  border-color: #d22856;
+  transition: 0.3s;
+}
+
+.annexes__box-label::after {
+  position: absolute;
+  content: "";
+  z-index: 0;
+  top: 5px;
+  left: 11px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #d22856;
+  border: 2px solid #d22856;
+  box-sizing: border-box;
+  display: none;
+}
+
+.annexes__box-input:checked + .annexes__box-label::after {
+  display: block;
 }
 // End Annexes
