@@ -107,13 +107,13 @@
   transition: 0.3s;
 }
 
-.annexes__box-label + .annexes__box-input:focus::before {
+.annexes__box-label:active::before {
   border-color: #d22856;
   transition: 0.3s;
 }
 
-.annexes__box-label:active::before {
-  border-color: #d22856;
+.annexes__box-input:focus + .annexes__box-label::before {
+  border-color: #283645;
   transition: 0.3s;
 }
 
