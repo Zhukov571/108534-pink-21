@@ -429,6 +429,10 @@ template {
     order: 4;
   }
 }
+.sprite {
+  width: 0;
+  height: 0;
+}
 .header {
   position: relative;
 }
@@ -3599,11 +3603,14 @@ template {
   text-decoration: none;
   cursor: pointer;
 }
-.footer__author:hover path {
+.footer__author:hover {
+  color: red;
+}
+.footer__author:hover .footer__author-visible {
   fill: #283645;
   transition: 0.3s;
 }
-.footer__author:active path {
+.footer__author:active {
   fill: #283645;
   transition: 0.3s;
   opacity: 0.3;

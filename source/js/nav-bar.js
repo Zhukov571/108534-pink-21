@@ -3,6 +3,12 @@ const navMenu = document.getElementById('navigation');
 const navMenuWrapper= document.getElementById('headerTopLine');
 
 allEventListners();
+defaultForNav();
+
+function defaultForNav() {
+  navMenu.classList.remove('header__nav_no-js');
+  navMenuWrapper.classList.remove('header__open-nav');
+}
 
 function allEventListners() {
   navToggler.addEventListener('click', togglerClick);
