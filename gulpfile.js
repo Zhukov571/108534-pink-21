@@ -84,7 +84,7 @@ const sprite = () => {
   return gulp.src("source/img/icon/*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img/icon"))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.sprite = sprite;
@@ -163,6 +163,7 @@ exports.default = gulp.series (
     createWebp
   ),
   gulp.series(
-    server, watcher
+    server,
+    watcher
   )
 )
