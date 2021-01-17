@@ -63,4 +63,3 @@ document.body.addEventListener('keyup', function (e) {
 }); // end ready
 /*End Modal*/
 }());
-
