@@ -167,17 +167,19 @@
 
 @media (min-width: 1200px) {
   .comments__buttons-box {
+    position: relative;
     display: block;
   }
 
   .comments__arrow {
-    border: none;
-    background-color: transparent;
+    content: "";
     position: absolute;
-    bottom: 45%;
+    bottom: 150px;
     cursor: pointer;
     opacity: 0.8;
     transition: 0.3s;
+    border: none;
+    background-color: transparent;
   }
 
   .comments__arrow:hover {
@@ -189,11 +191,11 @@
   }
 
   .comments__left-arrow {
-    left: 11px;
+    left: -6px;
   }
 
   .comments__right-arrow {
-    right: 11px;
+    right: -6px;
   }
 
   .comments__right_arrow-icon {

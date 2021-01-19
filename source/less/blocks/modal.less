@@ -41,11 +41,13 @@
 }
 
 .modal__description {
+  max-width: 280px;
+  width: 100%;
   font-size: 14px;
   line-height: 24px;
   color: #283645;
   text-align: center;
-  margin: 0 0 40px;
+  margin: 0 auto 40px;
 }
 
 .modal__description br {
@@ -55,6 +57,10 @@
 @media (min-width: 660px) {
   .modal__description br {
     display: block;
+  }
+
+  .modal__description {
+    max-width: 380px;
   }
 }
 

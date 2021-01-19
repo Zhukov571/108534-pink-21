@@ -36,7 +36,7 @@
 
 @media (min-width: 660px) {
   .header__logo-link {
-    padding: 33px 0 40px;
+    padding: 27px 0 40px;
   }
 
   .header__logo {
@@ -111,8 +111,8 @@
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0.3);
   background-position: center top;
-  margin-top: -67px;
-  padding-top: 67px;
+  margin-top: -66px;
+  padding-top: 66px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-mobile@2x.jpg");
@@ -211,7 +211,7 @@
   border-bottom: 2px solid transparent;
 }
 
-@media (min-width: 320px) and (max-width: 1199.99px) {
+@media (min-width: 320px) and (max-width: 1199.98px) {
   .header__nav-link:hover,
   .header__nav-toggler:hover,
   .header__header__toggler-open:hover {
@@ -275,7 +275,7 @@
 
 @media (min-width: 660px) {
   .header__nav-toggler {
-    top: 45px;
+    top: 43px;
   }
 }
 
@@ -344,8 +344,7 @@
 /* end nav-toggler*/
 
 /* mobile breakpoint start */
-@media (max-width: 1199.99px) {
-
+@media (max-width: 1199.98px) {
   /* navbar css for mobile start */
   .header__nav-toggler {
     display: block;
@@ -391,7 +390,7 @@
   .header__content {
     display: flex;
     align-items: center;
-    padding: 93px 20px 75px;
+    padding: 93px 20px 79px;
   }
 }
 
@@ -406,11 +405,11 @@
 .header__content-title {
   max-width: 240px;
   width: 100%;
-  margin: 0 auto 23px;
+  margin: 0 auto 25px;
   color: @basic-color;
   font-weight: 300;
   font-size: 24px;
-  line-height: normal;
+  line-height: 32px;
   text-align: center;
 }
 
@@ -419,7 +418,7 @@
     max-width: 240px;
     font-size: 40px;
     line-height: 49px;
-    margin-bottom: 28px;
+    margin-bottom: 27px;
     position: relative;
     z-index: 1;
   }
@@ -429,7 +428,7 @@
   .header__content-title {
     font-size: 50px;
     line-height: 68px;
-    margin-bottom: 35px;
+    margin-bottom: 37px;
   }
 }
 
@@ -438,7 +437,7 @@
   margin: 0 auto 0 -20px;
 }
 
-@media (min-width: 320.99px) and (max-width: 659.99px) {
+@media (min-width: 320.98px) and (max-width: 659.98px) {
   .header__content-image {
     display: block;
     margin: 0 auto;
@@ -469,10 +468,121 @@
 
 // End Header Content
 
+// Aplications
+.header__aplications {
+  padding-top: 26px;
+  padding-bottom: 34px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1d2631;
+  margin: 0 -20px;
+}
+
+@media (min-width: 660px) {
+  .header__aplications {
+    background-color: transparent;
+    padding-top: 0;
+    position: relative;
+    z-index: 0;
+  }
+}
+
+.header__aplication-button {
+  margin: 0 auto 30px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: @basic-color;
+  background-color: transparent;
+  border: 3px solid @basic-color;
+  box-sizing: border-box;
+  border-radius: 29px;
+  padding: 16px 36px 15px;
+  cursor: pointer;
+}
+
+.header__aplication-button:hover {
+  background-color: #ffffff;
+  color: #d22856;
+  transition: 0.3s;
+}
+
+.header__aplication-button:active {
+  background-color: #ffffff;
+  color: rgba(210, 40, 86, 0.3);
+  transition: 0.3s;
+}
+
+@media (min-width: 660px) {
+  .header__aplication-button {
+    padding: 16px 46px 15px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__aplication-button {
+    margin-bottom: 68px;
+    padding: 16px 29px 16px;
+    font-size: 21px;
+  }
+}
+
+.header__aplication-box {
+  margin-bottom: 19px;
+}
+
+@media (min-width: 660px) {
+  .header__aplication-box {
+    margin-bottom: 33px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__aplication-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+}
+
+.header__aplications-link {
+  margin-right: 31px;
+}
+
+@media (min-width: 1200px) {
+  .header__aplications-link {
+    margin-right: 35px;
+  }
+}
+
+.header__aplications-link:last-child {
+  margin-right: 0;
+}
+
+.header__aplications_content-description {
+  margin: 0 auto;
+  max-width: 240px;
+  width: 100%;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: @basic-color;
+}
+
+@media (min-width: 660px) {
+  .header__aplications_content-description {
+    font-size: 18px;
+    max-width: 300px;
+  }
+}
+// End Aplications
 
 // Header Content Form
 .header__content-form {
-  padding: 26px 0 46px;
+  padding: 26px 0 43px;
 }
 
 @media (min-width: 660px) {
@@ -513,7 +623,7 @@
 
 // Header Content Catalog
 .header__content-catalog {
-  padding: 26px 0 76px;
+  padding: 28px 0 78px;
 }
 
 @media (min-width: 660px) {

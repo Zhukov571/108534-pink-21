@@ -5,7 +5,7 @@
 
 @media (min-width: 660px) {
   .emoution {
-    padding-top: 12px;
+    padding-top: 10px;
     padding-bottom: 50px;
     order: 4;
   }
@@ -14,13 +14,14 @@
 @media (min-width: 1200px) {
   .emoution {
     width: 100%;
+    padding-bottom: 2px;
   }
 }
 
 @media (min-width: 660px) {
   .emoution__fieldset {
     margin-bottom: 69px;
-    padding: 37px 63px 54px 53px;
+    padding: 37px 58px 54px 53px;
   }
 }
 
@@ -45,6 +46,7 @@
   .emoution__title {
     padding: 0 38px;
     margin: 0 auto;
+    transform: translateX(2px);
   }
 }
 
@@ -154,5 +156,25 @@
 
 .emoution__warning-span {
   color: #d22856;
+}
+
+@media (min-width: 320px) and (max-width: 1199.98px) {
+  .emoution__dekstop-warning {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .emoution__dekstop-warning {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  .emoution__warning {
+    display: none;
+  }
 }
 // End Emoution
