@@ -57,7 +57,7 @@ exports.scripts = scripts;
 // Images
 
 const images = () => {
-  return gulp.src(["source/img/**/*.{jpg,png,svg}", "!source/img/sprite.svg", "!source/img/icon"])
+  return gulp.src(["source/img//*.{jpg,png,svg}", "!source/img/sprite.svg", "!source/img/icon//*.{jpg,png,svg}"])
     .pipe(imagemin([
       imagemin.mozjpeg({ progresive: true }),
       imagemin.optipng({ optomozationLevel: 7 }),
@@ -94,7 +94,7 @@ const copy = (done) => {
   gulp.src([
     "source/fonts/**/*.{woff2,woff}",
     "source/*.ico",
-    "source/img/**/*.{jpg,png,svg}",
+    "source/img/*.{jpg,png,svg}",
   ], {
     base: "source"
   })
