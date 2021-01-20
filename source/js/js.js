@@ -9,6 +9,7 @@
   function defaultForNav() {
     navMenu.classList.remove('header__nav_no-js');
     navMenuWrapper.classList.remove('header__open-nav');
+    navToggler.classList.add('header__nav-toggler_visible');
   }
 
   function allEventListners() {

@@ -1,20 +1,20 @@
-// Achivment
-.achivment {
+// Achievement
+.achievement {
   margin: 0 -20px;
   padding: 37px 20px 47px;
   background-color: #f2f2f2;
 }
 
 @media (min-width: 660px) {
-  .achivment {
+  .achievement {
     padding-top: 36px;
     background-color: #ffffff;
     order: 3;
   }
 }
 
-@media (min-width: 1200px) {
-  .achivment {
+@media (min-width: 960px) {
+  .achievement {
     width: 100%;
     padding-top: 18px;
     padding-bottom: 45px;
@@ -22,18 +22,18 @@
 }
 
 @media (min-width: 660px) {
-  .achivment__fieldset {
+  .achievement__fieldset {
     padding: 48px 0 54px 56px;
   }
 }
 
-@media (min-width: 1200px) {
-  .achivment__fieldset {
+@media (min-width: 960px) {
+  .achievement__fieldset {
     padding: 48px 58px 60px;
   }
 }
 
-.achivment__title {
+.achievement__title {
   margin: 0 auto 43px;
   font-weight: 400;
   font-size: 14px;
@@ -44,7 +44,7 @@
 }
 
 @media (min-width: 660px) {
-  .achivment__title {
+  .achievement__title {
     display: block;
     margin: 0 auto;
     padding: 0 31px;
@@ -52,41 +52,41 @@
   }
 }
 
-.achivment__box {
+.achievement__box {
   margin: 0;
   padding: 0;
 }
 
-@media (min-width: 1200px) {
-  .achivment__box {
+@media (min-width: 960px) {
+  .achievement__box {
     display: flex;
     justify-content: space-between;
   }
 
-  .achivment__title {
+  .achievement__title {
     transform: translateX(0);
   }
 }
 
-.achivment__box-item {
+.achievement__box-item {
   margin-bottom: 52px;
 }
 
-.achivment__box-items:last-child .achivment__box-item:last-child {
+.achievement__box-items:last-child .achievement__box-item:last-child {
   margin-bottom: 0;
 }
 
-@media (min-width: 1200px) {
-  .achivment__box-item {
+@media (min-width: 960px) {
+  .achievement__box-item {
     margin-bottom: 54px;
   }
 
-  .achivment__box-item:last-child {
+  .achievement__box-item:last-child {
     margin-bottom: 0;
   }
 }
 
-.achivment__box-label {
+.achievement__box-label {
   position: relative;
   z-index: 0;
   padding-left: 59px;
@@ -97,7 +97,7 @@
   cursor: pointer;
 }
 
-.achivment__box-label::before {
+.achievement__box-label::before {
   position: absolute;
   content: "";
   z-index: 0;
@@ -111,7 +111,7 @@
   box-sizing: border-box;
 }
 
-.achivment__box-input:checked + .achivment__box-label::after {
+.achievement__box-input:checked + .achievement__box-label::after {
   position: absolute;
   content: url("../img/tick.svg");
   z-index: 0;
@@ -119,18 +119,18 @@
   left: 9px;
 }
 
-.achivment__box-label:hover::before {
+.achievement__box-label:hover::before {
   border-color: #283645;
   transition: 0.3s;
 }
 
-.achivment__box-label:active::before {
+.achievement__box-label:active::before {
   border-color: #d22856;
   transition: 0.3s;
 }
 
-.achivment__box-input:focus + .achivment__box-label::before {
+.achievement__box-input:focus + .achievement__box-label::before {
   border-color: #283645;
   transition: 0.3s;
 }
-// End Achivment
+// End Achievement
