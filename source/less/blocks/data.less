@@ -10,10 +10,10 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .data {
     width: 100%;
-    padding-top: 51px;
+    padding-top: 48px;
     padding-bottom: 40px;
   }
 }
@@ -25,7 +25,7 @@
 
 @media (min-width: 660px) {
   .data__fieldset {
-    padding: 31px 60px 28px 54px;
+    padding: 31px 60px 28px 56px;
   }
 
   .data__fieldset-title {
@@ -36,12 +36,19 @@
     text-transform: uppercase;
     color: #d22856;
     padding: 0 29px;
+    transform: translateX(3px);
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .data__fieldset {
-    padding: 28px 55px 13px;
+    padding: 31px 55px 13px;
+  }
+}
+
+@media (min-width: 960px) {
+  .data__fieldset-title {
+    transform: translateY(0);
   }
 }
 
@@ -65,14 +72,14 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .data__box-label {
     margin-bottom: 0;
     width: calc(50% - 34px);
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .data-box {
     flex-direction: row;
     justify-content: space-between;
@@ -80,11 +87,11 @@
 }
 
 @media (min-width: 660px) {
-  .data__box-phone {
+  .data__box_phone {
     position: relative;
   }
 
-  .data__box-phone::after {
+  .data__box_phone::after {
     position: absolute;
     content: url("../img/data-phone-icon.svg");
     z-index: 0;
@@ -95,14 +102,14 @@
     padding-top: 20px;
     background-color: #e5e5e5;
     top: 0;
-    right: 0;
+    right: -3px;
   }
 
-  .data__box-address {
+  .data__box_address {
     position: relative;
   }
 
-  .data__box-address::after {
+  .data__box_address::after {
     position: absolute;
     content: url("../img/data-mail-icon.svg");
     z-index: 0;
@@ -113,6 +120,15 @@
     padding-top: 20px;
     background-color: #e5e5e5;
     top: 0;
+    right: -3px;
+  }
+}
+
+@media (min-width: 960px) {
+  .data__box_phone::after,
+  .data__box_address::after {
+    width: 60px;
+    height: 60px;
     right: 0;
   }
 }
@@ -181,15 +197,15 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .data__phone-input,
   .data__address-input {
-    margin-bottom: 13px;
+    margin-bottom: 11px;
   }
 }
 
-.data__span-phone,
-.data__span-address {
+.data__span_phone,
+.data__span_address {
   display: block;
   margin-left: 23px;
   margin-bottom: 7px;
@@ -201,16 +217,23 @@
 }
 
 @media (min-width: 660px) {
-  .data__span-phone {
+  .data__span_phone {
     order: 1;
     margin-left: 18px;
     margin-bottom: 0;
   }
 
-  .data__span-address {
+  .data__span_address {
     order: 3;
     margin-left: 18px;
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .data__span_phone,
+  .data__span_address {
+    margin-left: 20px;
   }
 }
 // End Data
